@@ -1,0 +1,43 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+#game-area {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#requirements-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#input-area input[type="password"] {
+    padding: 8px;
+    margin-right: 5px;
+}
+
+#input-area button {
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+#message-area {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.success-message {
+    color: green;
+}
+
+.error-message {
+    color: red;
+}
+
+/* Add more styles as needed */
