@@ -72,8 +72,8 @@ function generateRequirements(round) {
         reqs.reqNoConsecutiveChars = true;
     }
 
-    // Palindrome (ONLY Round 5 - adjust if desired)
-    if (round === 5) {
+    // Palindrome (ONLY Round 5 & 10 - adjust if desired)
+    if (round === 5 || round === 10) {
         reqs.reqPalindrome = true;
         // Optional: Relax other constraints slightly for palindrome round
         // reqs.minDigits = Math.max(0, reqs.minDigits - 1);
