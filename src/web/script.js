@@ -60,7 +60,7 @@ function generateRequirements(round) {
     // --- Ridiculous Requirements (Translate C logic) ---
 
     // Starts with Uppercase, Ends with Symbol (Round 3+)
-    if (round >= 3) {
+    if (round >= 3 && (round % 5)) {
         reqs.reqStartUpperEndSymbol = true;
         if (reqs.minLength < 2) reqs.minLength = 2; // Need at least 2 chars
         if (reqs.minUppercase < 1) reqs.minUppercase = 1;
@@ -72,8 +72,8 @@ function generateRequirements(round) {
         reqs.reqNoConsecutiveChars = true;
     }
 
-    // Palindrome (ONLY Round 5 & 10 - adjust if desired)
-    if (round === 5 || round === 10) {
+    // Palindrome (ONLY Rounds divisible by 5 - adjust if desired)
+    if (round >= 5 && ! (round % 5)) {
         reqs.reqPalindrome = true;
         // Optional: Relax other constraints slightly for palindrome round
         // reqs.minDigits = Math.max(0, reqs.minDigits - 1);
